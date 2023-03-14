@@ -3,23 +3,21 @@
 
 T20 Cricket Match Score Prediction Using Machine Learning Techniques
 
-Md. All Shahoriar Tonmoy (Researcher), Sakline Topu (Researcher), Jakaria Apu (Researcher) and Md. Rahat (Researcher)![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.001.png)
+Md. All Shahoriar Tonmoy (Researcher), Sakline Topu (Researcher), Jakaria Apu (Researcher) and Md. Rahat (Researcher)
 
 S. Tonmoy: *Preprint submitted to Elsevier* Page  of 
 T20 Cricket Match Score Prediction
 
-ARTICLE INFO![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.002.png)
+ARTICLE INFO
 
 *Keywords*: Machine learning T20 match
 
-Score prediction Regression model XGBRegressor![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.003.png)
+Score prediction Regression model XGBRegressor
 
 ABSTRACT
 
-T20 cricket is a popular format of cricket worldwide, and predicting the outcome of T20 cricket matches![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.004.png) is of great interest to cricket fans and bookmakers alike. In this paper, we propose a machinelearningapproachtopredictthescoreofaT20cricketmatch.Weuseadatasetallofthe T20cricketmatchscoresandtrainamachinelearningmodeltopredictthescorebasedonvarious features such as team composition, pitch conditions, and weather. We evaluate the performance of our model using standard evaluation metrics and compare it with existing approaches. Our results demonstrate that our machine learning approach can effectively predict the score of a T20 cricket match with high accuracy.
+T20 cricket is a popular format of cricket worldwide, and predicting the outcome of T20 cricket matches is of great interest to cricket fans and bookmakers alike. In this paper, we propose a machinelearningapproachtopredictthescoreofaT20cricketmatch.Weuseadatasetallofthe T20cricketmatchscoresandtrainamachinelearningmodeltopredictthescorebasedonvarious features such as team composition, pitch conditions, and weather. We evaluate the performance of our model using standard evaluation metrics and compare it with existing approaches. Our results demonstrate that our machine learning approach can effectively predict the score of a T20 cricket match with high accuracy.
 
-S. Tonmoy: *Preprint submitted to Elsevier* Page 4 of 4
-T20 Cricket Match Score Prediction
 
 1. **Introduction**
 
@@ -40,9 +38,7 @@ implement random forest, naive bayes and decision trees. The accuracy was 90%, 9
 
 wayusinglinearregression.Butinthatcase,it’sbeinghardtodeterminecurrentstatedependingonvenue.[Priya(2022)](#_page2_x13.93_y583.12)
 
-3.DataMiningandMachineLearninginCricketMatchOutcomePrediction:MissingLinksisapaperwhichworks on missing links among matches using k neerest neighbour algorithm. It generates a model which can predict scores depending on changing state of a game.[Hatharasinghe (2019)](#_page2_x13.93_y563.19)![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.005.png)
-
-ORCID(s):![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.006.png)
+3.DataMiningandMachineLearninginCricketMatchOutcomePrediction:MissingLinksisapaperwhichworks on missing links among matches using k neerest neighbour algorithm. It generates a model which can predict scores depending on changing state of a game.[Hatharasinghe (2019)](#_page2_x13.93_y563.19)
 
 3. **Dataset Analysis**
 
@@ -73,8 +69,6 @@ The model is built up depending on multiple variables. So, User have to give inp
 5. **Output and Result anslysis**
 
 As cricket is an unpredictable match, for some specific data, the prediction jump a lot. But it’s almost possible to predict the finalscore after at least 10 overs played. So, it will increase it’s accuracy as the match goes up.![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.006.png)
-
-![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.008.png)
 
 Figure 2: Accuracy comparison
 
@@ -111,4 +105,3 @@ in Electrical, Computing, Communication and Sustainable Technologies (ICAECT). [
 Zhagparov, 2021. Building a system for predicting the yield of grain crops based on machine learning using the xgbregressor algorithm, in: 2021
 
 IEEEInternationalConferenceonSmartInformationSystemsandTechnologies(SIST). [Preprint].Availableat:[https://doi.org/10.1109/ sist50301.2021.9465938.](https://doi.org/10.1109/sist50301.2021.9465938)![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.006.png)
-S. Tonmoy: *Preprint submitted to Elsevier* Page 4 of 4
