@@ -2,6 +2,12 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+import sys
+import subprocess
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'xgboost'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-U scikit-learn'])
 import xgboost
 from xgboost import XGBRegressor
 
@@ -83,8 +89,8 @@ if st.button('Predict Score'):
 
     input_df = pd.DataFrame(
      {'batting_team': [batting_team], 'bowling_team': [bowling_team],'city':city, 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
-    res = pipe.predict(input_df)
-    st.header("Predicted Score - " + str(int(res[0])))
+    result = pipe.predict(input_df)
+    st.header("Predicted Score - " + str(int(result[0])))
 
 
 
