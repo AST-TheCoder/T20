@@ -1,20 +1,16 @@
 # T20
-﻿T20 Cricket Match Score Prediction
 
-T20 Cricket Match Score Prediction Using Machine Learning Techniques
+**T20 Cricket Match Score Prediction Using Machine Learning Techniques**
 
-Md. All Shahoriar Tonmoy (Researcher), Sakline Topu (Researcher), Jakaria Apu (Researcher) and Md. Rahat (Researcher)
+Md. All Shahoriar Tonmoy (Researcher)
 
-S. Tonmoy: *Preprint submitted to Elsevier* Page  of 
-T20 Cricket Match Score Prediction
+*Keywords*:
+Machine learning 
+T20 match Score prediction
+Regression model 
+XGBRegressor
 
-ARTICLE INFO
-
-*Keywords*: Machine learning T20 match
-
-Score prediction Regression model XGBRegressor
-
-ABSTRACT
+ABSTRACT
 
 T20 cricket is a popular format of cricket worldwide, and predicting the outcome of T20 cricket matches is of great interest to cricket fans and bookmakers alike. In this paper, we propose a machinelearningapproachtopredictthescoreofaT20cricketmatch.Weuseadatasetallofthe T20cricketmatchscoresandtrainamachinelearningmodeltopredictthescorebasedonvarious features such as team composition, pitch conditions, and weather. We evaluate the performance of our model using standard evaluation metrics and compare it with existing approaches. Our results demonstrate that our machine learning approach can effectively predict the score of a T20 cricket match with high accuracy.
 
@@ -30,15 +26,11 @@ In this paper, we propose a machine learning approach to predict the score of a 
 The remainder of this paper is organized as follows. In Section II, we provide an overview of related work in the field of T20 cricket score prediction. In Section III, we describe our dataset and the features used for prediction. In Section IV, we describe the machine learning models used for prediction. In Section V, we present the results of our experiments and compare our approach with existing approaches. Finally, in Section VI, we conclude the paper and discuss future directions for research.
 
 2. **Related Works**
-1. ICC T20 Cricket World Cup 2020 Winner Prediction Using Machine Learning Techniques is a paper which
+2.1. ICC T20 Cricket World Cup 2020 Winner Prediction Using Machine Learning Techniques is a paper which implements random forest, naive bayes and decision trees. The accuracy was 90%, 98% and 82% respectively.[ Basit (2020)](#_page2_x13.93_y543.27)
 
-implement random forest, naive bayes and decision trees. The accuracy was 90%, 98% and 82% respectively.[ Basit (2020)](#_page2_x13.93_y543.27)
+2.2. Analysis and Winning Prediction in T20 Cricket using Machine Learning is a paper to predict the runs in same wayusinglinearregression.Butinthatcase,it’sbeinghardtodeterminecurrentstatedependingonvenue.[Priya(2022)](#_page2_x13.93_y583.12)
 
-2. Analysis and Winning Prediction in T20 Cricket using Machine Learning is a paper to predict the runs in same
-
-wayusinglinearregression.Butinthatcase,it’sbeinghardtodeterminecurrentstatedependingonvenue.[Priya(2022)](#_page2_x13.93_y583.12)
-
-3.DataMiningandMachineLearninginCricketMatchOutcomePrediction:MissingLinksisapaperwhichworks on missing links among matches using k neerest neighbour algorithm. It generates a model which can predict scores depending on changing state of a game.[Hatharasinghe (2019)](#_page2_x13.93_y563.19)
+2.33.DataMiningandMachineLearninginCricketMatchOutcomePrediction:MissingLinksisapaperwhichworks on missing links among matches using k neerest neighbour algorithm. It generates a model which can predict scores depending on changing state of a game.[Hatharasinghe (2019)](#_page2_x13.93_y563.19)
 
 3. **Dataset Analysis**
 
@@ -68,16 +60,17 @@ The model is built up depending on multiple variables. So, User have to give inp
 
 5. **Output and Result anslysis**
 
-As cricket is an unpredictable match, for some specific data, the prediction jump a lot. But it’s almost possible to predict the finalscore after at least 10 overs played. So, it will increase it’s accuracy as the match goes up.![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.006.png)
+As cricket is an unpredictable match, for some specific data, the prediction jump a lot. But it’s almost possible to predict the finalscore after at least 10 overs played. So, it will increase it’s accuracy as the match goes up.
+
+![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.008.png)
 
 Figure 2: Accuracy comparison
 
 **5.1. Error analysis**
 
-Our model is performing well with a tiny amount of error. R2 Score = 0.9880058059678749
-
+Our model is performing well with a tiny amount of error.
+R2 Score = 0.9880058059678749
 MSE = 1.645501689603695
-
 RMSE = 1.282771097898489
 
 6. **Conclusion**
@@ -90,18 +83,10 @@ In future work, we plan to investigate the use of additional features such as pl
 
 **References**
 
-Basit, 2020. Icc t20 cricket world cup 2020 winner prediction using machine learning techniques, in: 2020 IEEE 23rd International Multitopic
+Basit, 2020. Icc t20 cricket world cup 2020 winner prediction using machine learning techniques, in: 2020 IEEE 23rd International Multitopic Conference (INMIC). [Preprint]. Available at:[ https://doi.org/10.1109/inmic50486.2020.9318077.](https://doi.org/10.1109/inmic50486.2020.9318077)
 
-Conference (INMIC). [Preprint]. Available at:[ https://doi.org/10.1109/inmic50486.2020.9318077.](https://doi.org/10.1109/inmic50486.2020.9318077)
+Hatharasinghe, 2019. Data mining and machine learning in cricket match outcome prediction: Missing links, in: 2019 IEEE 5th International Conference for Convergence in Technology (I2CT). [Preprint]. Available at:[ https://doi.org/10.1109/i2ct45611.2019.9033698. ](https://doi.org/10.1109/i2ct45611.2019.9033698)
 
-Hatharasinghe, 2019. Data mining and machine learning in cricket match outcome prediction: Missing links, in: 2019 IEEE 5th International
+Priya, 2022. Analysis and winning prediction in t20 cricket using machine learning, in: 2022 Second International Conference on Advances in Electrical, Computing, Communication and Sustainable Technologies (ICAECT). [Preprint]. Available at:[ https://doi.org/10.1109/icaect54875.2022.9807929](https://doi.org/10.1109/icaect54875.2022.9807929)
 
-Conference for Convergence in Technology (I2CT). [Preprint]. Available at:[ https://doi.org/10.1109/i2ct45611.2019.9033698. ](https://doi.org/10.1109/i2ct45611.2019.9033698)Priya, 2022. Analysis and winning prediction in t20 cricket using machine learning, in: 2022 Second International Conference on Advances
-
-in Electrical, Computing, Communication and Sustainable Technologies (ICAECT). [Preprint]. Available at:[ https://doi.org/10.1109/](https://doi.org/10.1109/icaect54875.2022.9807929)
-
-[icaect54875.2022.9807929.](https://doi.org/10.1109/icaect54875.2022.9807929)
-
-Zhagparov, 2021. Building a system for predicting the yield of grain crops based on machine learning using the xgbregressor algorithm, in: 2021
-
-IEEEInternationalConferenceonSmartInformationSystemsandTechnologies(SIST). [Preprint].Availableat:[https://doi.org/10.1109/ sist50301.2021.9465938.](https://doi.org/10.1109/sist50301.2021.9465938)![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.006.png)
+Zhagparov, 2021. Building a system for predicting the yield of grain crops based on machine learning using the xgbregressor algorithm, in: 2021 IEEEInternationalConferenceonSmartInformationSystemsandTechnologies(SIST). [Preprint].Availableat:[https://doi.org/10.1109/ sist50301.2021.9465938.](https://doi.org/10.1109/sist50301.2021.9465938)![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.006.png)
