@@ -6,8 +6,8 @@ import sys
 import subprocess
 
 # implement pip as a subprocess:
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'xgboost'])
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'sklearn'])
+subprocess.check_call([sys.executable, '-m', 'pip3', 'install', 'xgboost'])
+subprocess.check_call([sys.executable, '-m', 'pip3', 'install', 'scikit-learn'])
 import xgboost
 from xgboost import XGBRegressor
 
