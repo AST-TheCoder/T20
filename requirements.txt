@@ -2,5 +2,5 @@ xgboost
 sklearn
 pandas
 pickle
-scipy==1.8.0
+scipy
 numpy
