@@ -10,12 +10,12 @@ T20 match Score prediction,
 Regression model, 
 XGBRegressor
 
-ABSTRACT
+**ABSTRACT**
 
 T20 cricket is a popular format of cricket worldwide, and predicting the outcome of T20 cricket matches is of great interest to cricket fans and bookmakers alike. In this paper, we propose a machinelearningapproachtopredictthescoreofaT20cricketmatch.Weuseadatasetallofthe T20cricketmatchscoresandtrainamachinelearningmodeltopredictthescorebasedonvarious features such as team composition, pitch conditions, and weather. We evaluate the performance of our model using standard evaluation metrics and compare it with existing approaches. Our results demonstrate that our machine learning approach can effectively predict the score of a T20 cricket match with high accuracy.
 
 
-1. **Introduction**
+**1. Introduction**
 
 T20cricketisapopularformatofcricketworldwide,withmillionsoffansandplayers.Thegameisplayedbetween two teams of 11 players each, and the objective is to score more runs than the opposing team in 20 overs. T20 cricket is a high-scoring format of cricket, and predicting the outcome of T20 cricket matches is of great interest to cricket fans and bookmakers alike.
 
@@ -25,41 +25,41 @@ In this paper, we propose a machine learning approach to predict the score of a 
 
 The remainder of this paper is organized as follows. In Section II, we provide an overview of related work in the field of T20 cricket score prediction. In Section III, we describe our dataset and the features used for prediction. In Section IV, we describe the machine learning models used for prediction. In Section V, we present the results of our experiments and compare our approach with existing approaches. Finally, in Section VI, we conclude the paper and discuss future directions for research.
 
-2. **Related Works**
+**2. Related Works**
 
 2.1. ICC T20 Cricket World Cup 2020 Winner Prediction Using Machine Learning Techniques is a paper which implements random forest, naive bayes and decision trees. The accuracy was 90%, 98% and 82% respectively.[ Basit (2020)](#_page2_x13.93_y543.27)
 
 2.2. Analysis and Winning Prediction in T20 Cricket using Machine Learning is a paper to predict the runs in same wayusinglinearregression.Butinthatcase,it’sbeinghardtodeterminecurrentstatedependingonvenue.[Priya(2022)](#_page2_x13.93_y583.12)
 
-2.33.DataMiningandMachineLearninginCricketMatchOutcomePrediction:MissingLinksisapaperwhichworks on missing links among matches using k neerest neighbour algorithm. It generates a model which can predict scores depending on changing state of a game.[Hatharasinghe (2019)](#_page2_x13.93_y563.19)
+2.3. DataMiningandMachineLearninginCricketMatchOutcomePrediction:MissingLinksisapaperwhichworks on missing links among matches using k neerest neighbour algorithm. It generates a model which can predict scores depending on changing state of a game.[Hatharasinghe (2019)](#_page2_x13.93_y563.19)
 
-3. **Dataset Analysis**
+**3. Dataset Analysis**
 
 The dataset contains eight variables such as batting team, bowling team, city, current score, balls left, wickets left, crr and last five over runs. Every 120 rows staring from first row contains ball by ball data of each match. As, this is a supervised learning, runs against per match also given. It contains all the data of International T20 matches played by top 10 teams in ICC ranklist.
 
 Initially it contains a single match in a row. We splitted it on behalf of variables mentioned above. Then we filtered all Women T20 matches and low frequency teams’ matches.
 
-4. **Methodology**
+**4. Methodology**
 
 We used a very well known regression model XGBRegressor.
 
-1. **XGBRegressor**
+**4.1. XGBRegressor**
 
 The XGBRegressor generally classifies the order of importance of each feature used for the prediction. A benefit of using gradient boosting is that after the boosted trees are constructed, it is relatively straightforward to retrieve importance scores for each attribute.[Zhagparov (2021)](#_page2_x13.93_y613.01)
 
 We used this to make the prediction faster and more accurate. We tried some other algorithms. But till now it gives best performance.
 
-2. **Data Flow**
+**4.2. Data Flow**
 
 ![](img/Aspose.Words.f101f4a1-b5c6-42e7-bee7-e07d091dec84.007.jpeg)
 
 Figure 1: Data flow diagram
 
-3. **UI analysis**
+**4.3. UI analysis**
 
 The model is built up depending on multiple variables. So, User have to give input about the batting-bowling team, venue, overs played, current run and last five over runs. System will calculate and show the result.
 
-5. **Output and Result anslysis**
+**5. Output and Result anslysis**
 
 As cricket is an unpredictable match, for some specific data, the prediction jump a lot. But it’s almost possible to predict the finalscore after at least 10 overs played. So, it will increase it’s accuracy as the match goes up.
 
@@ -77,7 +77,7 @@ MSE = 1.645501689603695
 
 RMSE = 1.282771097898489
 
-6. **Conclusion**
+**6. Conclusion**
 
 In this paper, we proposed a machine learning approach to predict the score of a T20 cricket match using the XGBRegressor model. We used a dataset of historical T20 cricket match scores and trained our model to predict the scorebasedonvariousfeaturessuchasteamcomposition,pitchconditions,andweather.Ourresultsdemonstratedthat our machine learning approach can effectively predict the score of a T20 cricket match with high accuracy.
 
