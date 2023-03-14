@@ -5,9 +5,9 @@
 Md. All Shahoriar Tonmoy (Researcher)
 
 *Keywords*:
-Machine learning 
-T20 match Score prediction
-Regression model 
+Machine learning, 
+T20 match Score prediction,
+Regression model, 
 XGBRegressor
 
 ABSTRACT
@@ -26,6 +26,7 @@ In this paper, we propose a machine learning approach to predict the score of a 
 The remainder of this paper is organized as follows. In Section II, we provide an overview of related work in the field of T20 cricket score prediction. In Section III, we describe our dataset and the features used for prediction. In Section IV, we describe the machine learning models used for prediction. In Section V, we present the results of our experiments and compare our approach with existing approaches. Finally, in Section VI, we conclude the paper and discuss future directions for research.
 
 2. **Related Works**
+
 2.1. ICC T20 Cricket World Cup 2020 Winner Prediction Using Machine Learning Techniques is a paper which implements random forest, naive bayes and decision trees. The accuracy was 90%, 98% and 82% respectively.[ Basit (2020)](#_page2_x13.93_y543.27)
 
 2.2. Analysis and Winning Prediction in T20 Cricket using Machine Learning is a paper to predict the runs in same wayusinglinearregression.Butinthatcase,it’sbeinghardtodeterminecurrentstatedependingonvenue.[Priya(2022)](#_page2_x13.93_y583.12)
@@ -69,8 +70,11 @@ Figure 2: Accuracy comparison
 **5.1. Error analysis**
 
 Our model is performing well with a tiny amount of error.
+
 R2 Score = 0.9880058059678749
+
 MSE = 1.645501689603695
+
 RMSE = 1.282771097898489
 
 6. **Conclusion**
