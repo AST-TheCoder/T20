@@ -2,12 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import sys
-import subprocess
-
-# implement pip as a subprocess:
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'xgboost'])
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'scikit-learn'])
 import xgboost
 from xgboost import XGBRegressor
 
