@@ -2,7 +2,11 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-pip insall xgboost
+import sys
+import subprocess
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'xgboost'])
 import xgboost
 from xgboost import XGBRegressor
 
