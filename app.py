@@ -7,9 +7,6 @@ import xgboost
 from xgboost import XGBRegressor
 import hashlib
 
-pipe = sklearn.pipeline.Pipeline(steps=[
-    ('step1',XGBRegressor(n_estimators=1000,learning_rate=0.2,max_depth=12,random_state=1))
-])
 pipe = pickle.load(open('pipe.pkl','rb'))
 
 teams = ['Australia',
@@ -84,6 +81,7 @@ with col5:
     wickets = st.number_input('Wickets out')
 
 last_five = st.number_input('Runs scored in last 5 overs')
+
 
 if st.button('Predict Score'):
     balls_left = 120 - (overs*6)
