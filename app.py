@@ -85,7 +85,6 @@ if st.button('Predict Score'):
     input_df = pd.DataFrame(
      {'batting_team': [batting_team], 'bowling_team': [bowling_team],'city':[city], 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
     
-    st.write(xgboost.__version__)
     result = pipe.predict(input_df)
     st.header("Predicted Score - " + str(int(result[0])))
 
