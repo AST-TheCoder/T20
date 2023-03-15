@@ -1,6 +1,6 @@
 xgboost
 scikit-learn
 pandas
-pickle
+pickle-mixin
 scipy
 numpy
