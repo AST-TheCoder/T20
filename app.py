@@ -7,6 +7,9 @@ import xgboost
 from xgboost import XGBRegressor
 import hashlib
 
+pipe = sklearn.pipeline.Pipeline(steps=[
+    ('step1',XGBRegressor(n_estimators=1000,learning_rate=0.2,max_depth=12,random_state=1))
+])
 pipe = pickle.load(open('pipe.pkl','rb'))
 
 teams = ['Australia',
