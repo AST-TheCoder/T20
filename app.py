@@ -82,7 +82,7 @@ with col5:
 
 last_five = st.number_input('Runs scored in last 5 overs')
 
-print(xgboost.__version__)
+st.write(xgboost.__version__)
 
 if st.button('Predict Score'):
     balls_left = 120 - (overs*6)
