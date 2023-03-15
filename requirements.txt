@@ -1,5 +1,5 @@
 xgboost
-sklearn==0.23.0
+scikit-learn
 pandas
 pickle
 scipy
