@@ -1,3 +1,5 @@
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 import streamlit as st
 import pickle
 import pandas as pd
@@ -5,7 +7,10 @@ import numpy as np
 import sklearn
 import xgboost
 from xgboost import XGBRegressor
-
+pipe = Pipeline(steps=[
+    ('step1',StandardScaler()),
+    ('step2',XGBRegressor(n_estimators=1000,learning_rate=0.2,max_depth=12,random_state=1))
+])
 pipe = pickle.load(open('pipe.pkl','rb'))
 
 teams = ['Australia',
