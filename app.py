@@ -92,7 +92,7 @@ if st.button('Predict Score'):
     crr = current_score/overs
 
     input_df = pd.DataFrame(
-     {'hashed_batting_team': [team1], 'hashed_bowling_team': [team2],'city':venue, 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
+     {'hashed_batting_team': [team1], 'hashed_bowling_team': [team2],'hashed_city':venue, 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
     result = pipe.predict(input_df)
     st.header("Predicted Score - " + str(int(result[0])))
 
