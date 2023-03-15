@@ -1,8 +1,4 @@
 import streamlit as st
-import subprocess
-
-# Install scikit-learn using pip
-subprocess.call(['pip', 'install', 'pickle'])
 import pickle
 import pandas as pd
 import numpy as np
