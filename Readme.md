@@ -52,7 +52,7 @@ The full name of each stadium is included in the dataset. A lengthy string, howe
 
 Additionally, dropping those balls precisely prior to the extra balls has been attempted, however, the run has been modified. It denotes that all of the additional balls’ data has been merged with that of the last valid ball. Also included are 30 additional rows using the same data as the match-ending row. Understanding the ter- mination circumstances of a match for a model will improve accuracy. The model will begin forecasting after the game is done until there are at least five overs, depending on the variables. There is now a promising score. It is not necessary to forecast the clear results scored. It will forecast the potential score that could be added through- out the remaining overs. The independent variable for the dataset is addible scores. The dataset ultimately contains information on more than 400+ matches. Theoreti- cally, 150 rows are required to express each match. The dataset now has more than 60000 rows. A sample of the completed dataset is shown in Fig. 1.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.001.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.001.png)
 
 Fig. 1: Sample of the final dataset
 
@@ -64,7 +64,7 @@ Predictedscore = 20 ∗PredictedRunRate (1)
 
 Predicting the ultimate run rate is very similar to predicting the final score. Addi- tionally, it has certain accuracy issues. There is a problem that significantly affects accuracy. Let’s examine the graph in Figure 2.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.002.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.002.png)
 
 Fig. 2: Ratio of predicted runs vs actual runs
 
@@ -76,7 +76,7 @@ Predictedscore = CurrentScore + PredictedAddibleScore (2)
 
 Also, You will get an equal density of data for any current state of the match. Look at the graph(Fig. 3).
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.003.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.003.png)
 
 Fig. 3: Ratio of predicted addible runs vs actual addible runs
 
@@ -92,7 +92,7 @@ Due to XGBoost’s strong performance and scalability, which allow it to deal wi
 
 In Fig. 4, The pipeline is shown for the XGBoost regression. At first, The columns with non-numerical data are selected and passed through the Onehotencoder. Then, It has been scaled. Lastly, XGBRegressor starts predicting.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.004.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.004.png)
 
 Fig. 4: XGBoost Regression Pipeline
 
@@ -102,7 +102,7 @@ A regularization method for linear regression models is called Lasso (Least Abso
 
 In Fig. 5, The pipeline is shown for the Lasso regression. At first, The columns with non-numerical data are selected and passed through the Onehotencoder. Then, It has been scaled. Then, the data runs through the GridSearchCV for the best fit of alpha parameters. Lastly, the Lasso regressor starts predicting.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.005.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.005.png)
 
 Fig. 5: Lasso Regression Pipeline
 
@@ -112,7 +112,7 @@ When regularizing linear regression models, ridge regression adds a penalty com-
 
 In Fig. 6, the pipeline for ridge regression is working the same as lasso regression.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.006.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.006.png)
 
 Fig. 6: Ridge Regression Pipeline
 
@@ -122,7 +122,7 @@ The data has been processed as indicated in the data analysis section, as can be
 
 matches were used to train the model. then made an effort to forecast others. But the accuracy was lacking. The dataset was then divided at random between each ball. After that, pipelines are developed to forecast how a game’s opening innings will turn out. It is producing better results.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.007.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.007.png)
 
 Fig. 7: Data Flow Diagram
 
@@ -140,7 +140,7 @@ OversPlayed
 
 After calculating all of the data, the prediction has been started through the gen- erated pipeline by regression models. The sample of the user interface can be built as shown in Fig. 8.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.008.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.008.png)
 
 Fig. 8: Sample of the user interface to take input and show output
 
@@ -168,7 +168,7 @@ MAE = N i − yˆ|
 
 |y (7) i=1
 
-The root mean squared error is the standard deviation of actual data and predicted data, which is calculated by Equation 8 [11[\].](#_page12_x100.07_y311.44)![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.009.png)
+The root mean squared error is the standard deviation of actual data and predicted data, which is calculated by Equation 8 [11[\].](#_page12_x100.07_y311.44)![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.009.png)
 
 1 N
 
@@ -188,7 +188,7 @@ r2score = 0.884106 MAE = 13.527113 RMSE = 19.264971
 
 and the distribution plot is shown in Fig. 9 of Lasso regression. It is showing that the distortion is very high with the increment of runs.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.010.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.010.png)
 
 Fig. 9: Distribution Plot of Lasso Regression output
 
@@ -200,7 +200,7 @@ r2score = 0.884095 MAE = 13.528754 RMSE = 19.265946
 
 and the distribution plot is shown in Fig. 10 of ridge regression. Also, It can be noticed in Fig. 9, The behavior of distortion is the same as lasso regression.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.010.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.010.png)
 
 Fig. 10: Distribution Plot of Ridge Regression output
 
@@ -212,13 +212,13 @@ r2score = 0.990038 MAE = 2.196730 RMSE = 5.648247
 
 and the distribution plot is shown in Fig. 11 of XGBoost regression. Fig. 11 shows that the distortion is too low to notice. But, yet cricket is a very unpredictable game.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.011.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.011.png)
 
 Fig. 11: Distribution Plot of XGBoost Regression output
 
 The actual data and the data predicted by XGBoost regression of some matches are also plotted in Fig. 12 to compare side by side. 25 matches are taken to predict randomly. And Fig. 12 shows that the actual and predicted runs are almost the same.
 
-![](img\Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.012.png)
+![](img/Aspose.Words.c36fc0ec-b6f7-4a50-aa52-5bdc6c64d5b7.012.png)
 
 Fig. 12: Actual and predicted data of some matches
 
