@@ -2,11 +2,10 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import sklearn
 import xgboost
 from xgboost import XGBRegressor
 
-pipe = pickle.load(open('pipe.pkl','rb'))
+pipe = pickle.load(open('pipe_update1.pkl','rb'))
 
 teams = ['Australia',
  'India',
@@ -69,24 +68,24 @@ city = st.selectbox('Select city',sorted(cities))
 col3,col4,col5 = st.columns(3)
 
 with col3:
-    current_score = st.number_input('Current Score')
+    current_score = st.number_input('Current Score',min_value=0)
 with col4:
-    overs = st.number_input('Overs done(works for over>5)')
+    overs = st.number_input('Overs done(works for over>5)', min_value=5,max_value=19)
 with col5:
-    wickets = st.number_input('Wickets out')
+    wickets = st.number_input('Wickets out',min_value=0,max_value=9)
 
-last_five = st.number_input('Runs scored in last 5 overs')
+last_five = st.number_input('Runs scored in last 5 overs',min_value=0)
 
 if st.button('Predict Score'):
     balls_left = 120 - (overs*6)
-    wickets_left = 10 -wickets
+    wickets_left = 10 - wickets
     crr = current_score/overs
 
     input_df = pd.DataFrame(
-     {'batting_team': [batting_team], 'bowling_team': [bowling_team],'city':[city], 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
-    
+     {'batting_team': [batting_team], 'bowling_team': [bowling_team],'city':city, 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
     result = pipe.predict(input_df)
-    st.header("Predicted Score - " + str(int(result[0])))
+    result[0] = result[0]
+    st.header("Predicted Score - " + str(int(int(result[0]) + current_score)))
 
 
 
