@@ -1,10 +1,8 @@
-﻿A Data-driven Approach to Predict Scores in T20
-
-Cricket Match Using Machine Learning Classifier
+﻿A Data-driven Approach to Predict Scores in T20 Cricket Match Using Machine Learning Classifier
 
 Abstract
 
-Accurate score prediction is essential for teams to develop winning strategies because of the growing popularity of T20 cricket and the significance of setting a challenging target in the first innings. The suggested method entails gathering his- torical information on T20 matches and applying feature engineering approaches to extract pertinent features. To forecast the first innings score, various regres- sion methods, like XGBoost regression, Lasso regression, and Ridge regression are trained on the dataset. Metrics such as mean absolute error, root mean squared error, and R-squared values are used to assess the performance of the models. The findings demonstrate the potential of machine learning techniques for pre- dicting the first innings score in T20 cricket matches, offering useful information for team strategy. The developed models, implemented codes, and user interface designs are deployed in this link: h[ttps://github.com/AST-TheCoder/T20](https://github.com/AST-TheCoder/T20)
+Accurate score prediction is essential for teams to develop winning strategies because of the growing popularity of T20 cricket and the significance of setting a challenging target in the first innings. The suggested method entails gathering his- torical information on T20 matches and applying feature engineering approaches to extract pertinent features. To forecast the first innings score, various regres- sion methods, like XGBoost regression, Lasso regression, and Ridge regression are trained on the dataset. Metrics such as mean absolute error, root mean squared error, and R-squared values are used to assess the performance of the models. The findings demonstrate the potential of machine learning techniques for pre- dicting the first innings score in T20 cricket matches, offering useful information for team strategy. The developed models, implemented codes, and user interface designs are deployed in this link: [https://github.com/AST-TheCoder/T20](https://github.com/AST-TheCoder/T20)
 
 Keywords: Score, Prediction, T20, RGBoost, Lasso, Ridge, Addable Score, CRR, Innings
 
